@@ -12,6 +12,8 @@ app.get('/', (req, res) => {
 })
 
 app.get('/drinks', (req, res) => {
-    res.render('')
-})
-
+    res.render('drinks_index.ejs', { drinks })
+});
+// app.get('/drinks/:indexOfDrinks'), (req, res) => {
+//     res.render()
+// }
