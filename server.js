@@ -16,5 +16,7 @@ app.get('/drinks', (req, res) => {
 });
 
 app.get('/drinks/:indexOfDrinks', (req, res) => {
-    res.send(drinks[req.params.indexOfDrinks])
+    res.render('drinks_show.ejs', {
+        drink: drinks[req.params.indexOfDrinks],
+    });
 });
