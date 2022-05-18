@@ -16,13 +16,18 @@ app.get('/drinks', (req, res) => {
     res.render('drinks_index.ejs', { drinks })
 });
 
+app.get('/foods', (req, res) => {
+    res.render('food_index.ejs', { foods })
+});
+
 app.get('/drinks/:indexOfDrinks', (req, res) => {
     res.render('drinks_show.ejs', {
         drink: drinks[req.params.indexOfDrinks],
     });
 });
 
-// app.get('/drinks', (req, res) => {
-//     res.render('food_index.ejs', { foods })
-// });
-
+app.get('/foods/:indexOfFoods', (req, res) => {
+    res.render('food_show.ejs', { 
+        food: foods[req.params.indexOfFoods],
+    });
+});

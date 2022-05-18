@@ -16,11 +16,12 @@
     <h1>Welcome to gitPub</h1>
     <% for (let i = 0; i < foods.length; i++) { %>
         <ul>
-            <li><a href="/drinks/<%= i %>">
+            <li><a href="/foods/<%= i %>">
                 <%= foods[i].name %>
             </a></li>
         </ul>
     <% } %>
+    <p><a href='/drinks'>Check out our list of drinks!</p>
 
 </body>
 </html>
