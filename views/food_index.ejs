@@ -14,11 +14,10 @@
         }
     </style>
     <h1>Welcome to gitPub</h1>
-    <% for (let i = 0; i < drinks.length; i++) { %>
+    <% for (let i = 0; i < foods.length; i++) { %>
         <ul>
             <li><a href="/drinks/<%= i %>">
-                <% let drinksName = drinks[i].name %>
-                <%= drinksName.charAt(0).toUpperCase() + drinksName.slice(1) %>
+                <%= foods[i].name %>
             </a></li>
         </ul>
     <% } %>

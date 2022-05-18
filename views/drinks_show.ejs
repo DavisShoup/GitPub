@@ -4,10 +4,20 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>gitPub Homepage</title>
 </head>
 <body>
-    <%= drink.name %>
-    
+    <style>
+        body {
+            background-color: steelblue;
+            color: blanchedalmond;
+        };
+    </style>
+    <h1>At foo bar</h1>
+    <h2>Name: <%= drink.name %></h2>
+    <h3>Price: $<%= drink.price %></h3>
+    <img src="<%= drink.image %>.jpg">
+    <p><a href='/drinks'>Go back to the homepage</p>
+
 </body>
 </html>
